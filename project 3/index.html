@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Ember &amp; Pine | Small-batch soy candles</title>
+    <meta
+      name="description"
+      content="Hand-poured soy candles, wax melts and gift sets. Free shipping on orders over $50."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="w">
+        <a class="logo" href="#top">Ember &amp; Pine</a
+        ><button class="btn sm" id="open-cart" aria-label="Open cart">
+          Cart (<span id="count">0</span>)
+        </button>
+      </div>
+    </header>
+    <main id="top">
+      <div class="w hero">
+        <h1>Small-batch candles, hand-poured.</h1>
+        <p>Clean-burning soy wax and scents inspired by quiet evenings. Free shipping over $50.</p>
+        <a class="btn" href="#shop">Shop the collection</a>
+      </div>
+      <section id="shop">
+        <div class="w">
+          <h2>The collection</h2>
+          <div class="bar">
+            <span id="chips"></span
+            ><input
+              id="q"
+              type="search"
+              placeholder="Search scents"
+              aria-label="Search products"
+            /><select id="sort" aria-label="Sort products">
+              <option value="">Featured</option>
+              <option value="lo">Price, low to high</option>
+              <option value="hi">Price, high to low</option>
+            </select>
+          </div>
+          <div class="grid" id="grid"></div>
+        </div>
+      </section>
+      <section>
+        <div class="w">
+          <h2>Good to know</h2>
+          <div class="info">
+            <div class="card">
+              <h3>Shipping</h3>
+              <p>Orders ship within 2 business days. Free over $50, otherwise $5.95.</p>
+            </div>
+            <div class="card">
+              <h3>Returns</h3>
+              <p>Not in love with it? Send it back within 30 days for a full refund.</p>
+            </div>
+            <div class="card">
+              <h3>What’s inside</h3>
+              <p>100% soy wax, cotton wicks, and phthalate-free fragrance. Burns about 50 hours.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="pitch">
+      <div class="w">
+        <div>
+          <strong>Want an online shop for your products?</strong>
+          <p>
+            Demo shop designed and built by <span id="devname"></span>. Simple cart, simple
+            checkout.
+          </p>
+        </div>
+        <a class="btn" id="devmail" href="#">Get a free quote</a>
+      </div>
+    </div>
+    <footer class="f">
+      <div class="w">
+        © Ember &amp; Pine. This is a demo business made for portfolio purposes. No payments are
+        taken.
+      </div>
+    </footer>
+    <dialog id="pdlg"><div class="dlg" id="pbody"></div></dialog>
+    <dialog id="cart"><div class="dlg" id="cbody"></div></dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
